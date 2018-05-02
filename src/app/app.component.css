@@ -1,0 +1,35 @@
+agm-map {
+    height: 500px;
+  }
+
+.container {
+    width: 100%;
+    background-color: #ffcc33;
+    margin: auto;
+}
+
+.actions{
+  width:30%;
+  float: left;
+}
+
+.paths{
+  float:left;
+  width:70%;
+}
+
+.actionButtons{
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th {
+  height: 50px;
+}
+
+td {
+  width: 200px;
+}
