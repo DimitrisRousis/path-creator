@@ -1,0 +1,29 @@
+<div class="actionButtons">
+    <button (click)='findMe()'>Find me</button>
+    
+    <button (click)='showMissions()'>{{show ? 'Hide' : 'Show' }} Missions</button>
+</div>
+
+<div class="container">
+    <h1>Add new path</h1>
+        <div class="form-group">
+            <label >Path's name</label>
+            <input [(ngModel)]="pathName">
+        </div>
+
+        <div class="form-group">
+            <label >Type</label>
+            <select [(ngModel)]="type">
+                <option *ngFor="let path of pathType" [value] = "path">{{path}}</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label >Difficulty</label>
+            <select [(ngModel)]="difficulty">
+                <option *ngFor="let level of difficultyLevel" [value] = "level">{{level}}</option>
+            </select>
+        </div>
+        <button type="submit" (click)='editPolyline()' class="btn btn-success">Add</button>
+        <button (click)='cancel()' class="btn btn-success">Cancel</button>
+</div>
